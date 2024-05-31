@@ -1,0 +1,83 @@
+<html><head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width" name="viewport">
+  
+  <style>body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: rgb(255, 255, 255) }.container { width: 100%; margin: 0 auto; padding: 20px; border: 1px solid rgb(204, 204, 204); border-radius: 5px; display: flex }.header { text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px }.table { width: 100% }.table th, .table td { border: 1px solid rgb(204, 204, 204); padding: 8px }.table th { text-align: left; background-color: rgb(240, 240, 240) }.table td { text-align: right }.footer { text-align: center; margin-top: 20px }.image-container { width: auto }.image-container img { max-width: 100%; height: auto; display: block; margin: 0 }.right-align { text-align: right }.center-align { text-align: center; background-color: rgb(188, 131, 24); color: white }.order-info { display: flex; justify-content: space-between }.order-title { background-color: rgb(188, 131, 24); color: white; padding: 10px; border-radius: 5px }.passenger-row { font-weight: bold }</style>
+</head><body><div style="word-wrap: break-word; word-break: break-word; font-size: 14px; color: rgb(49, 57, 73)"><div style="overflow-wrap: break-word; word-break: break-word"><div style="overflow-wrap: break-word; word-break: break-word"><div style="overflow-wrap: break-word; word-break: break-word"><br><br><div>
+
+
+  <div class="container">
+    <table class="image-container" style="color: rgb(49, 57, 73); font-size: 14px; font-family: Verdana, arial, Helvetica, sans-serif">
+      <tbody><tr>
+        <td><br><img imgfilesize="105413" src="https://crm.zoho.com/crm/viewInLineImage?fileContent=2f28268415d631fe990a4bf29b34d22bb983a714398039604d385b80a562e68cebcbcae7484c6f7ac7315d261b1115c6e6bd75badf3d4d36e8e368000c860f39e643f80f8f1c8cc31431c62d62d80c6696bbd8630b9165f83017f7803ee48762" height="162" width="702"></td>
+      </tr>
+      <tr>
+        <td><br><img imgfilesize="88915" src="https://crm.zoho.com/crm/viewInLineImage?fileContent=133eca4cd67411df9fb3ab942f5272ebfe1fbadc4c7e5fc679b50f95567d93263a9a4ad72d97d79b04b97a930879a8f7d56888f264f3cfa2d536a81cb9c7214951431abef89232dd0d63003e0863e36225a18ce4d98c58f98ae4ff278b3073ee" height="400" width="300"><br></td>
+      </tr>
+    </tbody></table>
+    
+
+    <div> 
+      <h1 class="header" style="color: rgb(49, 57, 73); font-size: 14px; font-family: Verdana, arial, Helvetica, sans-serif">MINERA MEDIA LUNA</h1>
+
+      <div class="order-info">
+        <h2 class="order-title" style="color: rgb(49, 57, 73); font-size: 14px; font-family: Verdana, arial, Helvetica, sans-serif">Orden de Servicio Transporte/Order</h2>
+        <div class="right-align">
+          <p style="color: rgb(49, 57, 73); font-size: 14px"><font face="Verdana, arial, Helvetica, sans-serif">Fecha/Date: ${Servicios Op.Fecha de Inicio}</font><font face="Arial, Helvetica, sans-serif"><span style="text-transform: uppercase"></span></font></p>
+          <p><span style="color: rgb(49, 57, 73); font-family: Verdana, arial, Helvetica, sans-serif; font-size: 14px">Folio: ${Servicios Op.No de Servicio}</span><font color="#ff0000" face="Arial, Helvetica, sans-serif" size="3"><span style="text-transform: uppercase"><b></b></span></font></p>
+        </div>
+      </div>
+
+      <table class="table" style="color: rgb(49, 57, 73); font-size: 14px; font-family: Verdana, arial, Helvetica, sans-serif">
+        <tbody><tr>
+          <th>Conductor/Driver:</th>
+          <td><span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left">${Servicios Op.Conductor}</span></td>
+        </tr>
+        <tr>
+          <th>Cel:</th>
+          <td>+52 (55) 6915-2310</td>
+        </tr>
+        <tr>
+          <th>Compañía/Company:</th>
+          <td>Tecam</td>
+        </tr>
+        <tr>
+          <th>Contacto/Contact:</th>
+          <td>Ing. Juan Pablo Patiño / Fortunato Meza</td>
+        </tr>
+      </tbody></table>
+
+      <h2 class="center-align" style="color: rgb(49, 57, 73); font-size: 14px; font-family: Verdana, arial, Helvetica, sans-serif">Itinerario/Itinerary</h2>
+
+      <table class="table" style="color: rgb(49, 57, 73); font-size: 14px; font-family: Verdana, arial, Helvetica, sans-serif">
+        <thead>
+          <tr>
+            <th>Dia/Day</th>
+            <th>Lugar de salida/Departure</th>
+            <th>Horario Salida/Time</th>
+            <th>Destino/Arrival</th>
+            <th>Horario Llegada/Arrival Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span style="font-family: Arial, Helvetica, sans-serif; text-transform: uppercase">${Servicios Op.Fecha de Inicio}</span></td><td style="text-align: left"><font face="Arial, Helvetica, sans-serif">${Servicios Op.Origen}</font></td>
+            <td><font face="Arial, Helvetica, sans-serif"><span style="text-transform: uppercase">${Servicios Op.Fecha de Inicio}</span></font></td>
+            <td><span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left">${Servicios Op.Destino}</span></td>
+            <td><font color="#707070" face="Arial, Helvetica, sans-serif"><span style="text-transform: uppercase">${Servicios Op.Fecha de término}</span></font></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="passenger-row">
+            <td colspan="6" class="passender-label">PASAJEROS</td> 
+          </tr>
+          <tr>
+            <td colspan="6"><span style="color: rgb(112, 112, 112); font-family: Arial, Helvetica, sans-serif; text-transform: uppercase">#{SERVICIOS OP.PASAJEROS}</span></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+
+</div></div></div></div></div></body></html>
